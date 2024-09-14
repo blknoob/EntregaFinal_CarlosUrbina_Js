@@ -51,6 +51,6 @@ const iconoWhatsapp = document.createElement("div");
 iconoWhatsapp.className = "whatsapp";
 
 const iconSvg = document.createElement("img");
-iconSvg.src = "./../assets/multimedia/jpg/whatsapp-symbol-logo-svgrepo-com.svg";
+iconSvg.src = "./../assets/multimedia/jpg/whatsapp.png";
 iconoWhatsapp.append(iconSvg);
 document.body.append(iconoWhatsapp);
