@@ -16,17 +16,17 @@ const cajaImgJugador = document.createElement("div");
 
 const piedraJugador = document.createElement("img");
 piedraJugador.className = "img";
-piedraJugador.src = "./assets/multimedia/jpg/played/piedra.png";
+piedraJugador.src = "/assets/multimedia/jpg/played/piedra.png";
 piedraJugador.addEventListener("click", () => juega("piedra"));
 
 const papelJugador = document.createElement("img");
 papelJugador.className = "img";
-papelJugador.src = "./assets/multimedia/jpg/played/papel.png";
+papelJugador.src = "/assets/multimedia/jpg/played/papel.png";
 papelJugador.addEventListener("click", () => juega("papel"));
 
 const tijeraJugador = document.createElement("img");
 tijeraJugador.className = "img";
-tijeraJugador.src = "./assets/multimedia/jpg/played/tijera.png";
+tijeraJugador.src = "/assets/multimedia/jpg/played/tijera.png";
 tijeraJugador.addEventListener("click", () => juega("tijera"));
 
 const computadoraTitulo = document.createElement("h5");
@@ -38,15 +38,15 @@ const cajaImgComputadora = document.createElement("div");
 
 const piedraComputadora = document.createElement("img");
 piedraComputadora.className = "img";
-piedraComputadora.src = "./assets/multimedia/jpg/played/piedra.png";
+piedraComputadora.src = "/assets/multimedia/jpg/played/piedra.png";
 
 const papelComputadora = document.createElement("img");
 papelComputadora.className = "img";
-papelComputadora.src = "./assets/multimedia/jpg/played/papel.png";
+papelComputadora.src = "/assets/multimedia/jpg/played/papel.png";
 
 const tijeraComputadora = document.createElement("img");
 tijeraComputadora.className = "img";
-tijeraComputadora.src = "./assets/multimedia/jpg/played/tijera.png";
+tijeraComputadora.src = "/assets/multimedia/jpg/played/tijera.png";
 
 const fin = document.createElement("h3");
 fin.className = "h3";
