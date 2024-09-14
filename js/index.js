@@ -3,7 +3,7 @@ header.className = "header";
 const encabezado = document.createElement("div");
 encabezado.className = "encabezadoSty";
 const logo = document.createElement("img");
-logo.src = "/assets/multimedia/jpg/Screenshot 2024-04-20 141935.jpg";
+logo.src = "./../assets/multimedia/jpg/Screenshot 2024-04-20 141935.jpg";
 logo.className = "logo";
 const nombre = document.createElement("h3");
 nombre.className = "nombreLogo";
@@ -22,7 +22,7 @@ botonBusqueda.className = "botones";
 
 const carritoStorage = document.createElement("img");
 carritoStorage.className = "carrito";
-carritoStorage.src = "/assets/multimedia/jpg/carro-de-la-compra.png";
+carritoStorage.src = "./../assets/multimedia/jpg/carro-de-la-compra.png";
 carritoStorage.alt = "carrito";
 carritoStorage.addEventListener("click", () => {
   contenedorCarritoCompras.style.display = "block";
