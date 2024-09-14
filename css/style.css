@@ -1,0 +1,71 @@
+.contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 16px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.h5 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #3f3f3f;
+}
+
+.card p {
+  font-size: 19px;
+  color: #333333;
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+}
+
+.encabezadoRight {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.barraBusqueda {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.barraBusqueda:focus {
+  outline: none;
+}
+
+.barraBusqueda::placeholder {
+  color: #3f3f3f;
+}

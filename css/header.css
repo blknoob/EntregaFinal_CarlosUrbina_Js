@@ -1,0 +1,101 @@
+.header {
+  height: 40vh;
+  background-image: url("https://aws.traveler.es/prod/designs/v1/assets/940x628/138674.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.encabezadoSty {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 80px;
+}
+
+.nombreLogo {
+  margin: 20px;
+  display: flex;
+  font-size: 2rem;
+  color: #333;
+  font-family: "Arial", sans-serif;
+}
+
+.botonCarrito {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+
+.botonAgregarCarrito {
+  background-color: #505357;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  height: 6vh;
+}
+
+.carrito {
+  height: 42px;
+  margin-top: 10px;
+}
+.carrito:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.modalCarrito {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80vw;
+  max-width: 400px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  left: 82vw;
+  top: 10vh;
+  transform: translateX(-50%);
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  overflow-y: auto;
+  max-height: 80vh;
+  border: 1px solid #ddd;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.contenidoLista {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+}
+
+.botones {
+  background-color: #7d7d7d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botones:hover {
+  background-color: #a9a9a9;
+  transform: scale(1.05);
+}
+
+p {
+  margin: 3px;
+}

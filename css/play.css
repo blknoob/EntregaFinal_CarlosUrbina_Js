@@ -1,0 +1,56 @@
+.juego {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+}
+
+.contenedorJugador,
+.contenedorComputadora {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  gap: 15px;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 10px;
+}
+
+.h5play {
+  font-size: 22px;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+}
+
+.img {
+  height: 140px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.img:hover {
+  transform: scale(1.1);
+}
+
+.boton {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #48b162;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #45a049;
+}
+
+.h3 {
+  font-size: 55px;
+  text-align: center;
+}

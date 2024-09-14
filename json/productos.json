@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "descripcion": "Bicicleta de Ruta Specialized Tarmac SL7 Comp",
+    "precio": 1200000,
+    "imagen": "https://www.clubinriders.com/wp-content/uploads/2022/09/Bicicleta-de-Ruta-Specialized-Tarmac-SL7-Comp.png"
+  },
+  {
+    "id": 2,
+    "descripcion": "Bicicleta de Ruta SBK Speed Road Tiagra",
+    "precio": 9000000,
+    "imagen": "https://biciurbana.com.ar/13392-thickbox_default/bicicleta-de-ruta-sbk-speed-road-tiagra.jpg"
+  },
+  {
+    "id": 3,
+    "descripcion": "Bicicleta De Ruta Ram Road R700 14 Velocidades Gravel",
+    "precio": 1300000,
+    "imagen": "https://resources.claroshop.com/medios-plazavip/mkt/63d2b2561d698_dise-o-sin-t-tulo-8-jpg.jpg"
+  },
+  {
+    "id": 4,
+    "descripcion": "Bicicleta de montaña Rockrider ST 900",
+    "precio": 700000,
+    "imagen": "https://contents.mediadecathlon.com/p1650501/k$365e232c6c6c92a56c4a5f45f10b5c32/sq/BICICLETA+DE+MONTA+A+DOBLE+SUSPENSI+N+ROCKRIDER+ST+900+S+27+5+11V+GRIS.jpg"
+  },
+  {
+    "id": 5,
+    "descripcion": "Wader Bicicleta de montaña con cuadro de aluminio",
+    "precio": 900000,
+    "imagen": "https://a1.soysuper.com/a179690808d1ce015be5794db25899fa.1024.0.0.0.wmark.07e9948d.jpg"
+  },
+  {
+    "id": 6,
+    "descripcion": "Bicicleta de Montaña Zigna Cobalt 26 Gris",
+    "precio": 650000,
+    "imagen": ""
+  },
+  {
+    "id": 7,
+    "descripcion": "MBM Boulevard Bicicleta de Paseo, Hombre, Titanio, 50 Centimeters",
+    "precio": 450000,
+    "imagen": "https://images-na.ssl-images-amazon.com/images/I/81npChiuaxL._AC_SL1500_.jpg"
+  },
+  {
+    "id": 8,
+    "descripcion": "Bicicleta Paseo/Urbana CROSS Modelo Jasmin",
+    "precio": 430000,
+    "imagen": "https://crossbike.com.pe/498-large_default/bicicleta-paseourbana-cross-modelo-jasmin.jpg"
+  },
+  {
+    "id": 9,
+    "descripcion": "Bicicleta de paseo 28'' Urban Life B-Pro · Deportes · El Corte Inglés",
+    "precio": 470000,
+    "imagen": "http://sgfm.elcorteingles.es/SGFM/dctm/MEDIA02/CONTENIDOS/201409/29/00108451201258____2__1000x1000.jpg"
+  },
+  {
+    "id": 10,
+    "descripcion": "Bicicleta de Paseo Lamborghini Rodado 26 Verde",
+    "precio": 550000,
+    "imagen": "https://images.fravega.com/f1000/cc40885ee8fba6e13f201c1ce1824412.jpg"
+  }
+]
