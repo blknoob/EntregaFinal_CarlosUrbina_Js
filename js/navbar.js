@@ -4,9 +4,9 @@ document.getElementById("head");
 //// MENU DE NAVEGACION ////
 
 const navLinks = [
-  { nombre: "E-commerce", link: "./../index.html" },
-  { nombre: "Planifica tu Rodada", link: "./../plain.html" },
-  { nombre: "Piedra, Papel o Tijera", link: "./../play.html" },
+  { nombre: "E-commerce", link: "/index.htmlindex.html" },
+  { nombre: "Planifica tu Rodada", link: "/plain.html" },
+  { nombre: "Piedra, Papel o Tijera", link: "/play.html" },
 ];
 
 const navBar = document.getElementById("navBar");
@@ -51,6 +51,6 @@ const iconoWhatsapp = document.createElement("div");
 iconoWhatsapp.className = "whatsapp";
 
 const iconSvg = document.createElement("img");
-iconSvg.src = "./../assets/multimedia/jpg/whatsapp.png";
+iconSvg.src = "/assets/multimedia/jpg/whatsapp.png";
 iconoWhatsapp.append(iconSvg);
 document.body.append(iconoWhatsapp);
