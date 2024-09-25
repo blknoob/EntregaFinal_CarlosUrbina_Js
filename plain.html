@@ -4,29 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Planifica tu rodada</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/menu.css">
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/plain.css">
+
+
 </head>
 
 <body>
 
   <header id="head"></header>
-  <nav id="navBar"></nav>
-  <main>
 
-    <div id="map"></div>
+  <nav id="navBar"></nav>
+
+  <main>
+    <h5>Conoce tu tiempo de viaje y condiciones del clima</h5>
+    <div class="containAll">
+      <div class="controls">
+        <label for="inicio">Punto de partida: </label>
+        <input id="inicio" type="text" value="">
+        <br><br>
+        <label for="fin">Destino: </label>
+        <input id="fin" type="text" value="">
+        <br><br>
+        <button id="botonPlain">Calcular tu Ruta y Condiciones del Clima</button>
+      </div>
+      <div class="containPlain">
+        <div id="map"></div>
+        <div class="boxResultados">
+          <div class="boxTiempo">
+            <h6 class="pPLain">Tiempo de Viaje</h6>
+            <div id="resultadoTiempo"></div>
+          </div>
+          <div class="boxDistancia">
+            <h6 class="pPLain">Distancia</h6>
+            <div id="resultadoDistancia"></div>
+          </div>
+          <div class="boxClima">
+            <h6 class="pPLain">Condiciones del Clima</h6>
+            <div id="resultadoClima"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
   </main>
   <footer id="footer"></footer>
 
-
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5O4hKACfuL47u7yuOJQkroZoW3ohYhP8"></script> -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfB10u7mYB3E3d44SyK1fknM9n0tCvCi0&libraries=places&callback=initMap">
+    </script>
   <script src="./js/index.js"></script>
-  <script src="./js/navbar.js"></script>
+  <script src="./js/nav.js"></script>
   <script src="./js/plain.js"></script>
 </body>
+
+</html>

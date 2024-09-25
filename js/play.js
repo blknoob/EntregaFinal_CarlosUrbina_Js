@@ -8,7 +8,7 @@ const contenedorComputadora = document.createElement("div");
 contenedorComputadora.className = "contenedorComputadora";
 
 const jugadorTitulo = document.createElement("h5");
-jugadorTitulo.className="h5play"
+jugadorTitulo.className = "h5play";
 jugadorTitulo.innerHTML = "Jugador (Elige tu opción)";
 contenedorJugador.append(jugadorTitulo);
 
@@ -113,7 +113,7 @@ function juega(jugadorEscoge) {
     (jugadorEscoge == "tijera" && computadoraEscoge == "papel")
   ) {
     resultado = `Ganaste`;
-    fin.style.color="green"
+    fin.style.color = "green";
   } else {
     resultado = `Perdiste`;
     fin.style.color = "red";

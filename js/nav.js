@@ -16,6 +16,7 @@ navLinks.forEach((links) => {
   const a = document.createElement("a");
   a.href = links.link;
   a.innerHTML = links.nombre;
+
   navBar.append(a);
 });
 

@@ -1,11 +1,14 @@
+
 .menu {
+  height: 10vh;
   background-color: #585858;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 80px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
 }
 
 .menu a {
@@ -14,45 +17,33 @@
   padding: 10px 15px;
   font-size: 16px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .menu a:hover {
   background-color: #838383;
+  transform: scale(1.05);
+  color: white;
 }
 
 
-.menu-toggle {
-  display: none; /* Oculto por defecto */
-  font-size: 24px;
-  cursor: pointer;
-}
-
-
-.menu-links {
-  display: flex;
-  gap: 20px;
-}
-
-
-@media (max-width: 768px) {
-  .menu-links {
-    display: none; /* Ocultar los enlaces por defecto en pantallas pequeñas */
+@media screen and (max-width: 450px) and (max-height: 950px) {
+  .menu {
+    padding: 5px;
+    height: max-content;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
   }
-
-  .menu-toggle {
-    display: block; 
-    background-color: white;
-  }
-
-  .menu-links.active {
-    display: flex; /* Mostrar el menú cuando se active */
-  }
-
   .menu a {
-    padding: 15px 20px;
-    font-size: 18px;
+    display: block;
+    /* height: 100%; */
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+    line-height: 3vh;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(44, 44, 44);
   }
 }

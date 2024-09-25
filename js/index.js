@@ -11,11 +11,6 @@ nombre.innerHTML = "SOK CORES";
 encabezado.append(logo, nombre);
 header.append(encabezado);
 
-
-
-
-
-
 const boxUp = document.createElement("div");
 boxUp.className = "encabezadoRight";
 const barraBusqueda = document.createElement("input");
@@ -155,7 +150,15 @@ let carritoDeCompras = [];
 
 function anadirCarrito(id) {
   const producto = inventario.find((producto) => producto.id == id);
-  carritoDeCompras.push(producto);
+
+  const productoEnCarrito = carritoDeCompras.find((item) => item.id == id);
+
+  if (productoEnCarrito) {
+    productoEnCarrito.cantidad++;
+  } else {
+    carritoDeCompras.push({ ...producto, cantidad: 1 });
+  }
+
   Toastify({
     text: `${producto.title} se agregó al Carrito!`,
     duration: 3000,
@@ -170,26 +173,63 @@ function anadirCarrito(id) {
 function mostrarProductoCarrito() {
   let total = 0;
   divCarrito.innerHTML = "";
-  carritoDeCompras.forEach((c) => {
+
+  carritoDeCompras.forEach((c, index) => {
     const contenidoLista = document.createElement("div");
     contenidoLista.className = "contenidoLista";
-    const listaNombreCarrito = `<p>Nombre: ${c.title}`;
+
+    const listaNombreCarrito = `Nombre: ${c.title}`;
     const cajaNombreCarrito = document.createElement("p");
     cajaNombreCarrito.innerHTML = listaNombreCarrito;
-    const listaPrecioCarrito = `<strong>Precio: $${c.price}</strong></p>`;
+
+    const listaCantidadCarrito = `Cantidad: ${c.cantidad}`;
+    const cajaCantidadCArrito = document.createElement("p");
+    cajaCantidadCArrito.innerHTML = listaCantidadCarrito;
+
+    const listaPrecioCarrito = `<strong>Precio: $${(
+      c.price * c.cantidad
+    ).toFixed(2)}</strong>`;
     const cajaPrecioCarrito = document.createElement("p");
     cajaPrecioCarrito.innerHTML = listaPrecioCarrito;
-    total += c.price;
-    contenidoLista.append(cajaNombreCarrito, cajaPrecioCarrito);
+
+    total += c.price * c.cantidad;
+
+    const aumentarCantidad = document.createElement("button");
+    aumentarCantidad.innerHTML = "+";
+    aumentarCantidad.className = "botones";
+    aumentarCantidad.addEventListener("click", () => {
+      c.cantidad++;
+      mostrarProductoCarrito();
+    });
+
+    const disminuirCantidad = document.createElement("button");
+    disminuirCantidad.innerHTML = "-";
+    disminuirCantidad.className = "botones";
+    disminuirCantidad.addEventListener("click", () => {
+      if (c.cantidad > 1) {
+        c.cantidad--;
+      } else {
+        carritoDeCompras.splice(index, 1);
+      }
+      mostrarProductoCarrito();
+    });
+
+    contenidoLista.append(
+      cajaNombreCarrito,
+      cajaCantidadCArrito,
+      cajaPrecioCarrito,
+      aumentarCantidad,
+      disminuirCantidad
+    );
     divCarrito.append(contenidoLista);
   });
 
   const totalPrecio = document.createElement("p");
   totalPrecio.innerHTML = `Total: <strong>$${total.toFixed(2)}</strong>`;
   divCarrito.append(totalPrecio);
-}
 
-mostrarProductoCarrito();
+  localStorage.setItem("Articulos", JSON.stringify(carritoDeCompras));
+}
 
 const controles = document.getElementById("controles");
 controles.className = "controles";
